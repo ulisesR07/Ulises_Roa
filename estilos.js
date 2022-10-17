@@ -92,7 +92,7 @@ do {
 posicion = marcas.indexOf(marcaCel);
 
 if(posicion!=-1){
-    alert("El celular se encuentra");
+    alert("La marca seleccionada se encuentra en nuestra tienda");
 
 /***************************************** */
 
@@ -108,7 +108,7 @@ let nombreCel = 5;
     const encontrado = modelo.find((mode) => mode.codigo == nombreCel);
 
       if (encontrado){
-        alert (encontrado.codigo)
+        alert ("El celularar "+encontrado.codigo + " Lo tenemos en stock")
 
         if (nombreCel == 1) {
           respuestaComprar = prompt(
