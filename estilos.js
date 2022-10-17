@@ -84,10 +84,9 @@ const modelo = [
 //Este ciclo lo repetirá hasta que el usuario decida seguir comprando
 do {
   let marcaCel = prompt(
-    nomUsu +
-      "¿Qué marca de celular está buscando?. Elija una letra: a) Samsung, B) Motorola, C) Iphone"
+    nomUsu + " ¿Qué marca de celular está buscando?. Elija una letra: \n a) Samsung \n B) Motorola \n C) Iphone"
   );
-/**************************** */
+/**************************** */  
 
 posicion = marcas.indexOf(marcaCel);
 
@@ -100,7 +99,7 @@ if(posicion!=-1){
 let nombreCel = 5;
   if (marcaCel == "a") {
     nombreCel = prompt(
-      "Celulares en Stock, elija un numero:  1)Samsung S8, 2)Samsung S7 Edge, 3)Samsung S22 Ultra, 4)Samsung S10."
+      "Celulares en Stock, elija un numero: \n 1)Samsung S8 \n 2)Samsung S7 Edge \n 3)Samsung S22 Ultra \n 4)Samsung S10."
     );
 
     /******************************/
@@ -159,7 +158,7 @@ alert("Su precio total con el IVA incluido es: " + (total + precioTotal));
 
 if (marcaCel == "b") {
     nombreCel = prompt(
-      "Celulares en Stock, elija un numero:  1)Motorola G60.  2)Motorola G6 Play.  3)Motorola G100"
+      "Celulares en Stock, elija un numero: \n 1)Motorola G60 \n 2)Motorola G6 Play \n 3)Motorola G100"
     );
 
     const encontrado = modelo.find((mode) => mode.codigo == nombreCel);
@@ -213,7 +212,7 @@ if (marcaCel == "b") {
 
 if (marcaCel == "c") {
     nombreCel = prompt(
-      "Celulares en Stock, elija un numero:  1)Iphone 7 Plus.  2)Iphone 13.  3)Iphone XR"
+      "Celulares en Stock, elija un numero: \n 1)Iphone 7 Plus \n 2)Iphone 13 \n 3)Iphone XR"
     );
 
     const encontrado = modelo.find((mode) => mode.codigo == nombreCel);
